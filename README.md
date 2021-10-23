@@ -27,10 +27,10 @@ highlighted) on the left side and your login shell on the right side.
 You can then interactively run commands from the file using the following
 keys:
 - 'e': Execute the current line/command.
-- 'j': Move to the next line (without executing the current line).
+- 'E': Edit the current line before executing.
+- 'j': Move to the next line.
 - 'k': Move to the previous line.
 - 'q': Quit
-- 'E': Edit the current line before executing.
 
 Anytime in between you can use the tmux session as usual. For example,
 you can move to the shell by pressing Ctrl-B ; and then move back to the
