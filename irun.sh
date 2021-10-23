@@ -88,7 +88,7 @@ end_line=$(( TERM_LINES < FILE_LINES ? TERM_LINES : FILE_LINES ))
 
 while true; do
     tput cup 0 0
-    bat -p -H $line -r $start_line:$end_line $FILE
+    cut -c -$COLUMNS $FILE | bat -p -H $line -r $start_line:$end_line
     read -s -n1 input
     process_input $input
 done
