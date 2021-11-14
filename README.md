@@ -1,6 +1,6 @@
 # irun
 
-This script allows you to run commands from a file in an interactive way.
+This script allows you to interactively run shell commands from a file.
 
 ## Installation
 This script depends on [tmux](https://github.com/tmux/tmux) and
