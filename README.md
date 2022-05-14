@@ -22,7 +22,7 @@ To start:
 $ ./irun.sh file_containing_shell_commands
 ```
 
-This will start a tmux session with the command file opened (and first line
+This will start a tmux session with the command file opened (and the first line
 highlighted) on the left side and your login shell on the right side.
 You can then interactively run commands from the file using the following
 keys:
