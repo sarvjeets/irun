@@ -1,5 +1,10 @@
 #!/bin/bash
 
+if [ "$#" -ne 1 ]; then
+    echo "Usage: $0 '<filename>'"
+    exit 2
+fi
+
 if [ -z "$TMUX" ]; then
     # We are outside a tmux session, start a new one.
     IRUN_SESSION=irun-$$
@@ -72,12 +77,7 @@ process_input () {
     esac
 }
 
-if [ "$#" -ne 1 ]; then
-    Usage: ibat '<filename>'
-    exit 2
-fi
 FILE=$1
-
 TERM_LINES=$(tput lines)
 ((--TERM_LINES))
 FILE_LINES=`cat $FILE | wc -l`
