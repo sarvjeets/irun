@@ -31,7 +31,8 @@ keys:
 
 - Arrow keys: Move up or down.
 - Enter: Execute the currently highlighted command.
-- 'e': Edit the current line before executing.
+- 'e': Edit the current line before executing. This moves the focus to the
+shell window on right (press Ctrl-B ; to return back to the left side).
 - 'q': Quit
 
 Anytime in between you can use the tmux session as usual. For example,
